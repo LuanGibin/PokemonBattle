@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="lib/theme/colors.css">
     <link rel="stylesheet" href="lib/presentation/widgets/widgets.css">
     <link rel="stylesheet" href="lib/presentation/features/home/home.css">
+    <link rel="stylesheet" href="lib/presentation/features/pokedex/pokedex.css">
 
-    <script defer src="home/home.js"></script>
     <script defer src="lib/api/apiConsumer.js"></script>
+    <script defer src="lib/presentation/features/home/home.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
 
 </head>
 
@@ -32,6 +36,10 @@
 
     <div id="pokedex-container">
 
+        <span class="material-symbols-outlined" onclick="backMainContainer(pokedexContainer)">
+            arrow_back
+        </span>
+
         <div class="pokemon__types">
         </div>
 
@@ -43,14 +51,14 @@
         </h2>
 
         <div class="pokemon__stats">
-            <span class="pokemon__attack"></span>
-            <span class="pokemon__defense"></span>
-            <span class="pokemon__special_attack"></span>
-            <span class="pokemon__special_defense"></span>
+            ATK: <span class="pokemon__attack"></span>
+            SPA: <span class="pokemon__special_attack"></span>
+            DEF: <span class="pokemon__defense"></span>
+            SPD: <span class="pokemon__special_defense"></span>
         </div>
 
         <form class="pokedex-form">
-            <input type="search" class="input__search" placeholder="Name or Number" required />
+            <input type="search" class="input" id="pokedex-input" placeholder="Name or Number" required />
         </form>
 
         <div class="pokedex-buttons">

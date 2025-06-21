@@ -1,17 +1,30 @@
 body {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
 }
 
 .button {
     background-color: var(--button-color);
-    color: white;
+    color: var(--button-text-color);
     padding: 10px 25px;
     cursor: pointer;
     border-radius: 12px;
-    border: 2px solid #333;
-    box-shadow: -2px 2px 0 #333;
+    border: 2px solid var(--border-color);
+    box-shadow: -2px 2px 0 var(--box-shadow-color);
 }
 
 .button:hover {
     background-color: var(--hover-button-color);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    color: var(--button-color);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    box-shadow: -2px 2px 0 var(--box-shadow-color);
 }
