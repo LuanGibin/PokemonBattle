@@ -32,20 +32,30 @@
 
     <div id="pokedex-container">
 
+        <div class="pokemon__types">
+        </div>
+
         <img src="#" alt="pokemon" class="pokemon__image">
 
-        <h1 class="pokemon__data">
+        <h2 class="pokemon__data">
             <span class="pokemon__number"></span> -
             <span class="pokemon__name"></span>
-        </h1>
+        </h2>
 
-        <form class="form">
+        <div class="pokemon__stats">
+            <span class="pokemon__attack"></span>
+            <span class="pokemon__defense"></span>
+            <span class="pokemon__special_attack"></span>
+            <span class="pokemon__special_defense"></span>
+        </div>
+
+        <form class="pokedex-form">
             <input type="search" class="input__search" placeholder="Name or Number" required />
         </form>
 
         <div class="pokedex-buttons">
-            <button class="button" id="btn-prev">Prev &lt;</button>
-            <button class="button" id="btn-next">Next &gt;</button>
+            <button class="button" id="button-prev">Prev &lt;</button>
+            <button class="button" id="button-next">Next &gt;</button>
         </div>
 
     </div>
