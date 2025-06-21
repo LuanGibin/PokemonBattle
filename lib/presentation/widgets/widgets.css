@@ -1,0 +1,17 @@
+body {
+    background-color: var(--accent-color);
+}
+
+.button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: -2px 2px 0 #333;
+}
+
+.button:hover {
+    background-color: var(--hover-button-color);
+}
