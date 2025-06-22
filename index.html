@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="lib/presentation/widgets/widgets.css">
     <link rel="stylesheet" href="lib/presentation/features/home/home.css">
     <link rel="stylesheet" href="lib/presentation/features/pokedex/pokedex.css">
+    <link rel="stylesheet" href="lib/presentation/features/selectPlayers/selectPlayers.css">
+    <link rel="stylesheet" href="lib/presentation/features/selectTeamsPlayers/capture.css">
 
     <script defer src="lib/api/apiConsumer.js"></script>
     <script defer src="lib/presentation/features/home/home.js"></script>
+    <script defer src="lib/presentation/features/selectPlayers/selectPlayers.js"></script>
+    <script defer src="lib/presentation/features/selectTeamsPlayers/capture.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
@@ -34,8 +38,37 @@
         </div>
     </div>
 
-    <div id="pokedex-container">
+    <div id="select-players-container">
+        <span class="material-symbols-outlined" onclick="backMainContainer(selectPlayersContainer)">
+            arrow_back
+        </span>
+        <h2>Click the "add player" button to add a new player</h2>
+        <div class="players-local" id="new-players-local">
+            <span class="new-player">Add a new player</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+            <span class="new-player">.</span>
+        </div>
+    </div>
 
+    <div id="capture-container">
+        <span class="material-symbols-outlined" onclick="backMainContainer(captureContainer)">
+            arrow_back
+        </span>
+        <div id="capture-local">
+            <span id="pokemon-exibition">
+            </span>
+            <img id="pokeball-capture-image" src="assets/images/pokeball.png" alt="Pokeball">
+        </div>
+    </div>
+
+    <div id="pokedex-container">
         <span class="material-symbols-outlined" onclick="backMainContainer(pokedexContainer)">
             arrow_back
         </span>
@@ -65,7 +98,6 @@
             <button class="button" id="button-prev">Prev &lt;</button>
             <button class="button" id="button-next">Next &gt;</button>
         </div>
-
     </div>
 
 </body>

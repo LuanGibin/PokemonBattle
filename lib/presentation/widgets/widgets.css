@@ -28,3 +28,10 @@ body {
     border: 2px solid var(--border-color);
     box-shadow: -2px 2px 0 var(--box-shadow-color);
 }
+
+.players-local {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 5px;
+}
