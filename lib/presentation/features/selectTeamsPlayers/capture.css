@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
     gap: 10px;
+    height: 100vh;
 }
 
 #capture-local {
@@ -19,13 +19,4 @@
     width: 100%;
     height: auto;
     max-width: 200px;
-}
-
-#pokemon-exibition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: auto;
 }
