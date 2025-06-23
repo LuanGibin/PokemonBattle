@@ -64,4 +64,5 @@ body {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    filter: grayscale(100%);
 }
