@@ -31,7 +31,36 @@ body {
 
 .players-local {
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 7px;
     row-gap: 5px;
+}
+
+.player-local {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    box-shadow: -2px 2px 0 var(--box-shadow-color);
+    background-color: var(--secundary-color);
+    width: clamp(100px, 20vw, 165px);
+}
+
+.player {
+    /* Máximo de 14 letras por nome!*/
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+}
+
+.delete-indicator-player {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.image-team-indicator {
+    width: 30px;
+    height: 30px;
 }
