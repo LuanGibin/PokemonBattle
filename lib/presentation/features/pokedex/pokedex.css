@@ -8,20 +8,3 @@
     height: 100vh;
     gap: 10px;
 }
-
-.pokemon__image {
-    width: 100%;
-    height: auto;
-    max-width: 180px;
-}
-
-.pokemon__name {
-    text-transform: capitalize;
-}
-
-.pokemon__stats {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 7px;
-    column-gap: 5px;
-}

@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="lib/presentation/features/pokedex/pokedex.css">
     <link rel="stylesheet" href="lib/presentation/features/selectPlayers/selectPlayers.css">
     <link rel="stylesheet" href="lib/presentation/features/selectTeamsPlayers/capture.css">
+    <link rel="stylesheet" href="lib/api/pokemonExibition.css">
 
     <script defer src="lib/api/apiConsumer.js"></script>
     <script defer src="lib/presentation/features/home/home.js"></script>
     <script defer src="lib/presentation/features/selectPlayers/selectPlayers.js"></script>
     <script defer src="lib/presentation/features/selectTeamsPlayers/capture.js"></script>
+    <script defer src="lib/presentation/features/pokedex/pokedex.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
@@ -62,8 +64,7 @@
             arrow_back
         </span>
         <div id="capture-local">
-            <span id="pokemon-exibition">
-            </span>
+            <span class="pokemon-exibition" id="pokemon-capture-exibition"></span>
             <img id="pokeball-capture-image" src="assets/images/pokeball.png" alt="Pokeball">
         </div>
     </div>
@@ -72,29 +73,30 @@
         <span class="material-symbols-outlined" onclick="backMainContainer(pokedexContainer)">
             arrow_back
         </span>
+        <span class="pokemon-exibition" id="pokemon-pokedex-exibition">
+            <div class="pokemon__types">
+            </div>
 
-        <div class="pokemon__types">
-        </div>
+            <img src="#" alt="pokemon" class="pokemon__image">
 
-        <img src="#" alt="pokemon" class="pokemon__image">
+            <h2 class="pokemon__data">
+                <span class="pokemon__number"></span> -
+                <span class="pokemon__name"></span>
+            </h2>
 
-        <h2 class="pokemon__data">
-            <span class="pokemon__number"></span> -
-            <span class="pokemon__name"></span>
-        </h2>
+            <div class="pokemon__stats">
+                ATK: <span class="pokemon__attack"></span>
+                SPA: <span class="pokemon__special_attack"></span>
+                DEF: <span class="pokemon__defense"></span>
+                SPD: <span class="pokemon__special_defense"></span>
+            </div>
+        </span>
 
-        <div class="pokemon__stats">
-            ATK: <span class="pokemon__attack"></span>
-            SPA: <span class="pokemon__special_attack"></span>
-            DEF: <span class="pokemon__defense"></span>
-            SPD: <span class="pokemon__special_defense"></span>
-        </div>
-
-        <form class="pokedex-form">
+        <form id="pokedex-form">
             <input type="search" class="input" id="pokedex-input" placeholder="Name or Number" required />
         </form>
 
-        <div class="pokedex-buttons">
+        <div id="pokedex-buttons">
             <button class="button" id="button-prev">Prev &lt;</button>
             <button class="button" id="button-next">Next &gt;</button>
         </div>
