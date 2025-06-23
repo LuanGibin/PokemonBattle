@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 10px;
+    gap: 100px;
     height: 100vh;
 }
 
@@ -13,6 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 340px;
 }
 
 #pokeball-capture-image {
@@ -20,4 +21,21 @@
     height: auto;
     max-width: 200px;
     cursor: pointer;
+}
+
+#capture-counter {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px;
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    box-shadow: -2px 2px 0 var(--box-shadow-color);
+    background-color: var(--secundary-color);
+}
+
+.image-team-capture-counter {
+    width: 30px;
+    height: 30px;
 }
