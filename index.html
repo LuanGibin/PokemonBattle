@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="lib/api/pokemonExibition.css">
 
     <script defer src="lib/api/apiConsumer.js"></script>
+    <script defer src="lib/presentation/features/player/player.js"></script>
     <script defer src="lib/presentation/features/home/home.js"></script>
     <script defer src="lib/presentation/features/selectPlayers/selectPlayers.js"></script>
     <script defer src="lib/presentation/features/defineTeams/capture.js"></script>
@@ -48,7 +49,7 @@
         <h2>Rename players as needed and set teams for selected players</h2>
         <div class="players-local" id="players-local">
             <span class="player-local">
-                <span class="player">Player 1</span>
+                <span class="player" data-player-id="1">Player 1</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -56,7 +57,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 5</span>
+                <span class="player" data-player-id="1">Player 5</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -64,7 +65,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 9</span>
+                <span class="player" data-player-id="1">Player 9</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -72,7 +73,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 13</span>
+                <span class="player" data-player-id="1">Player 13</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -80,7 +81,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 2</span>
+                <span class="player" data-player-id="2">Player 2</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -88,7 +89,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 6</span>
+                <span class="player" data-player-id="6">Player 6</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -96,7 +97,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 10</span>
+                <span class="player" data-player-id="10">Player 10</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -104,7 +105,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 14</span>
+                <span class="player" data-player-id="14">Player 14</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -112,7 +113,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 3</span>
+                <span class="player" data-player-id="3">Player 3</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -120,7 +121,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 7</span>
+                <span class="player" data-player-id="7">Player 7</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -128,7 +129,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 11</span>
+                <span class="player" data-player-id="11">Player 11</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -136,7 +137,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 15</span>
+                <span class="player" data-player-id="15">Player 15</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -144,7 +145,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 4</span>
+                <span class="player" data-player-id="4">Player 4</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -152,7 +153,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 8</span>
+                <span class="player" data-player-id="8">Player 8</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -160,7 +161,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 12</span>
+                <span class="player" data-player-id="12">Player 12</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -168,7 +169,7 @@
                 </div>
             </span>
             <span class="player-local">
-                <span class="player">Player 16</span>
+                <span class="player" data-player-id="16">Player 16</span>
                 <div class="delete-indicator-player">
                     <span class="material-symbols-outlined">delete</span>
                     <img src="assets/images/pokeballTeamIndicator.png" class="image-team-indicator"
@@ -180,13 +181,14 @@
 
     <div id="capture-container">
         <span class="material-symbols-outlined"
-            onclick="hideThisContainerAndDisplayNewContainer(captureContainer, mainContainer)">
+            onclick="hideThisContainerAndDisplayNewContainer(captureContainer, selectPlayersContainer)">
             arrow_back
         </span>
         <div id="capture-local">
             <span class="pokemon-exibition" id="pokemon-capture-exibition"></span>
             <img id="pokeball-capture-image" src="assets/images/pokeball.png" alt="Pokeball">
         </div>
+        <div id="capture-counter"></div>
     </div>
 
     <div id="pokedex-container">
