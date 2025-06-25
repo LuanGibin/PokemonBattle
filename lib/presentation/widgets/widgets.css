@@ -54,12 +54,6 @@ body {
     width: 100%;
 }
 
-.delete-indicator-player {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
 .image-team-indicator {
     width: 30px;
     height: 30px;
